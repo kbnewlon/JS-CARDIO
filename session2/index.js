@@ -89,6 +89,13 @@ function flattenArray(arrays) {
 
 }
 
+//************************* */
+// SOLUTION 3 - [...]
+//************************* */
+function flattenArray(arrays){
+    return [].concat(...arrays)
+
+}
 
 // CHALLENGE 4: ANAGRAM
 // Return true if anagram and false if not
