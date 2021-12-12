@@ -89,7 +89,7 @@ function flattenArray(arrays) {
 //************************* */
 // SOLUTION 3 - [...]
 //************************* */
-function flattenArray(arrays){
+function flattenArray(arrays) {
     return [].concat(...arrays)
 
 }
@@ -99,7 +99,19 @@ function flattenArray(arrays){
 // ex. 'elbow' === 'below'
 // ex. 'Dormitory' === 'dirty room##'
 
-function isAnagram(str1, str2) { }
+function isAnagram(str1, str2) {
+
+}
+
+//helper function
+function formatStr(str) {
+    return str
+        .replace(/[^/w]/g, '')
+        .toLowerCase()
+        .split('')
+        .sort()
+        .join('')
+}
 
 // CHALLENGE 5: LETTER CHANGES
 // Change every letter of the string to the one that follows it and capitalize the vowels
