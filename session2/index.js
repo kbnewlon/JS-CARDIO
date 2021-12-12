@@ -2,7 +2,6 @@
 // Return the longest word of a string
 // ex. longestWord('Hi there, my name is Brad') === 'there,'
 
-
 function longestWord(sen) {
     // gets rid of punctuation, filtered array
     const wordArr = sen.toLowerCase().match(/[a-z0-9]+/g)
@@ -15,13 +14,13 @@ function longestWord(sen) {
     const longestWordArr = sorted.filter(function (word) {
         return word.length === sorted[0].length
     })
-   //Check if more than one array value
-   if(longestWordArr.length === 1){
-       //return word
-       return longestWordArr[0]
-   } else {
-       return longestWordArr
-   }
+    //Check if more than one array value
+    if (longestWordArr.length === 1) {
+        //return word
+        return longestWordArr[0]
+    } else {
+        return longestWordArr
+    }
 
 }
 
@@ -30,7 +29,21 @@ function longestWord(sen) {
 // ex. chunkArray([1, 2, 3, 4, 5, 6, 7], 3) === [[1, 2, 3],[4, 5, 6],[7]]
 // ex. chunkArray([1, 2, 3, 4, 5, 6, 7], 2) === [[1, 2],[3, 4],[5, 6],[7]]
 
-function chunkArray(arr, len) { }
+function chunkArray(arr, len) { 
+    //initialize a chunked array
+    const chunkedArr = [];
+    //set index for loop
+    let i = 0;
+    //loop while index is less than array length
+    while(i < arr.length){
+        //slice out from index to the index + the chunk length
+        //push onto chunked array
+        chunkedArr.push(arr.slice(i, i + len))
+        //increment by chunk length
+        i += len;
+    }
+    return chunkedArr;
+}
 
 // CHALLENGE 3: FLATTEN ARRAY
 // Take an array of arrays and flatten to a single array
