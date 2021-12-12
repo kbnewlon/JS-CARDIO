@@ -35,15 +35,17 @@ function reverseString(str) {
 // ex. isPalindrome('racecar') === 'true', isPalindrome('hello') == false
 
 function isPalindrome(str) { }
-
+const revString = str.split('').reverse().join('');
+return revString === str;
 
 
 // CHALLENGE 3: REVERSE AN INTEGER
 // Return an integer in reverse
 // ex. reverseInt(521) === 125
 
-function reverseInt(int) { }
-
+function reverseInt(int) {
+  
+}
 
 
 // CHALLENGE 4: CAPITALIZE LETTERS
