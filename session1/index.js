@@ -46,7 +46,7 @@ return revString === str;
 function reverseInt(int) {
     const revString = int.toString().split('').reverse().join('')
 
-    return parseInt(revString)
+    return parseInt(revString) * Math.sign(int) //includes negative sign
 }
 
 
