@@ -71,7 +71,8 @@ function capitalizeLetters(str) {
     return str.toLowerCase()
         .split(' ')
         .map(word => {
-            word[0].toUpperCase() + word.substr(1)})
+            word[0].toUpperCase() + word.substr(1)
+        })
         .join(' ')
 
 }
@@ -82,7 +83,29 @@ function capitalizeLetters(str) {
 // CHALLENGE 5: MAX CHARACTER
 // Return the character that is most common in a string
 // ex. maxCharacter('javascript') == 'a'
-function maxCharacter(str) { }
+function maxCharacter(str) {
+    const charMap = {};
+    // loop through string as array
+    str.split('').forEach(function (char) {
+        // if character exists add tally
+        if (charMap[char]) {
+            charMap[char]++
+        } else {
+            charMap[char] = 1;
+        }
+    })
+
+    //for in loop used to loop through object instead of array
+    for (let char in charMap) {
+
+    }
+}
+
+// debugger;
+// node inspect index.js
+// c
+// repl
+// char
 
 
 
