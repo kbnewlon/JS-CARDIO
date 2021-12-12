@@ -53,7 +53,7 @@ function chunkArray(arr, len) {
     const chunkedArr = []
 
     //loop through array
-    arr.forEach(function (val) {
+    arr.forEach((val) => {
         //get last value
         const last = chunkedArr[chunkedArr.length - 1]
 
@@ -75,10 +75,7 @@ function chunkArray(arr, len) {
 function flattenArray(arrays) {
     //a is starting point and each iteration is b
     //need to concat b onto a
-    return arrays.reduce(function (a, b) {
-        return a.concat(b)
-
-    })
+    return arrays.reduce((a, b) => a.concat(b))
 }
 
 //************************* */
