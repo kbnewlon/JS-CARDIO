@@ -85,6 +85,9 @@ function capitalizeLetters(str) {
 // ex. maxCharacter('javascript') == 'a'
 function maxCharacter(str) {
     const charMap = {};
+    let maxNum = 0;
+    let maxChar = '';
+
     // loop through string as array
     str.split('').forEach(function (char) {
         // if character exists add tally
@@ -97,8 +100,12 @@ function maxCharacter(str) {
 
     //for in loop used to loop through object instead of array
     for (let char in charMap) {
-
+        if(charMap[char] > maxNum){
+            maxNum = charMap[char];
+            maxChar = char;
+        }
     }
+    return maxChar;
 }
 
 // debugger;
@@ -111,7 +118,12 @@ function maxCharacter(str) {
 
 // CHALLENGE 6: FIZZBUZZ
 // Write a program that prints all the numbers from 1 to 100. For multiples of 3, instead of the number, print "Fizz", for multiples of 5 print "Buzz". For numbers which are multiples of both 3 and 5, print "FizzBuzz".
-function fizzBuzz() { }
+function fizzBuzz() { 
+for(){
+    
+}
+
+}
 
 
 
