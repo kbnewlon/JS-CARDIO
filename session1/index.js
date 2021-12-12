@@ -44,7 +44,9 @@ return revString === str;
 // ex. reverseInt(521) === 125
 
 function reverseInt(int) {
-  
+    const revString = int.toString().split('').reverse().join('')
+
+    return parseInt(revString)
 }
 
 
