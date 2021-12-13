@@ -17,8 +17,11 @@ function addAll() {
 //************************* */
 // SOLUTION 2 - ...rest & reduce/forEach
 //************************* */
-function addAll(){
-    
+// ...rest gives rest of values
+function addAll(...numbers){
+    let total = 0;
+    numbers.forEach((num) => (total += num))
+    return total;
 }
 
 // CHALLENGE 2: SUM ALL PRIMES
