@@ -15,13 +15,23 @@ function addAll() {
 }
 
 //************************* */
-// SOLUTION 2 - ...rest & reduce/forEach
+// SOLUTION 2 - ...rest & forEach
 //************************* */
 // ...rest gives rest of values
 function addAll(...numbers){
     let total = 0;
     numbers.forEach((num) => (total += num))
     return total;
+}
+
+
+//************************* */
+// SOLUTION 3 - ...rest & reduce
+//************************* */
+// acc starts at zero, each iteration add current value
+function addAll(...numbers){
+    return numbers.reduce((acc, cur) => acc + cur)
+  
 }
 
 // CHALLENGE 2: SUM ALL PRIMES
